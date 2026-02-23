@@ -41,7 +41,6 @@ h1,h2,h3,h4,h5,h6{
 }
 h1{
   text-shadow: 2px 2px 1px rgb(109, 88, 245);
-
 }
 #navAndAfterNavWrapper{
     position: relative;
@@ -671,5 +670,23 @@ font-size: 4rem;
    #footerLinks a{
     /* font-size: 70%; */
    }
+   #addTextShadow{
+    text-shadow:1px 1px 1px rgb(38, 7, 242);
+}
+h1,h2,h3,h4,h5,h6{
+   text-shadow: 2px 1.5px 1px rgb(38, 7, 242)
+}
+h1{
+  text-shadow: 2px 2px 1px rgb(109, 88, 245);
+}
+.contactUsDivs{
+
+   text-shadow: 2px 2px 1px rgb(38, 7, 242);
+
+}
+#navImgandP p{
+   text-shadow: 2px 1px 1px rgb(38, 7, 242)
+    
+}
 }
    
