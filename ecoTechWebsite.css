@@ -1,5 +1,16 @@
 html{
     font-size: 62.5%;
+    /* overflow: hidden; */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html, body {
+  width: 100vw;
+  overflow-x: hidden;
 }
 body{
     margin: 0;
@@ -7,13 +18,14 @@ body{
     box-sizing: border-box;
     /* background: linear-gradient(170deg, rgb(0, 0, 20), black); */
     color: white;
-    background: url("Black_AND_BLUE_SPARKLES.jpeg");
+    /* background: url("Black_AND_BLUE_SPARKLES.jpeg"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
     /* background-image: url(""); */
     /* opacity: 0.7; */
     object-fit: fill;
+    overflow-x: hidden;
     background: linear-gradient(145deg, black, black, rgb(0,0, 20), rgb(0,0, 20), black, black);
     /* background: black; */
 }
@@ -24,16 +36,17 @@ h1,h2,h3,h4,h5,h6{
 }
 #navAndAfterNavWrapper{
     position: relative;
-overflow: hidden;
+/* overflow: hidden; */
 }
 nav{
     display: flex;
     align-items: stretch;
     justify-content: space-between;
-    padding: 0;
+    padding-right: 1rem;
     background: transparent;
     z-index: 1;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
 }
 nav ul {
     display: flex;
@@ -43,6 +56,37 @@ nav ul {
     width: 100%;
     height: 100%;
     margin: 0;
+    overflow: hidden;
+}
+.navUl{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.navUl a:hover{
+    background: rgb(109, 88, 245);
+    border-radius: 2rem;
+}
+.navUl{
+display: none;
+}
+.navUl1{
+    display: block
+}
+.fa-bars{
+
+    color: rgb(255, 255, 255); 
+    font-size: 5rem;
+}
+.fa-bars:hover{
+    opacity: 0.7;
+}
+.navUl a{
+    padding: 2rem;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
 }
 #navImg{
 width: 60px;
@@ -69,10 +113,11 @@ h1{
     /* align-items: stretch; */
     /* background: linear-gradient(to right, black, rgb(0,0,30)); */
     background: url("Black_and_blue_tech_background.mp4");
-    height: 80vh;
+    min-height: 80vh; /* ✅ allows it to grow on smaller screens */
+    height: auto;     /* ✅ no hard lock */height: 80vh;
     z-index: 1;
     position: relative;/* full screen section*/
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,6 +213,7 @@ text-align: center;
     align-items: stretch;
     justify-content: space-between;
     margin: 3rem;
+    margin-right: 3rem;
     gap: 5rem;
 }
 #email h3{
@@ -224,7 +270,7 @@ text-align: center;
     justify-content: space-between;
     align-items: stretch;
     margin: 10rem;
-    margin-top: 20rem;
+    margin-top: 10rem;
     margin-bottom: 10rem;
     /* height: auto; */
 }
@@ -284,6 +330,9 @@ form label, form input{
     align-self: center;
     justify-content: center;
  } */
+  #addMargin-Top{
+    /* display: none; */
+  }
  #lineDivider{
     height: 100%;
     border-right: 1px solid rgba(192, 192, 192, 0.501);
@@ -297,7 +346,9 @@ form label, form input{
  }
  .lineDivider{
     margin-bottom: 10rem;
+    
     width: 100%;
+    margin-top: 15rem;
  border-top: 1px solid rgba(192, 192, 192, 0.501);
  }
  .linksWrapper{
@@ -356,6 +407,23 @@ width: 80%;
 border-top: 1px solid white ;
 
  }
+.lineDividerrWrapper{
+    /* height: 35rem; */
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    /* align-items: stretch; */
+    margin: 3rem;
+    margin-top: 0;
+ }
+  #lineDivider{
+    height: 100%;
+    border: 0;
+    margin: 5rem;
+    margin-top: 0;
+    /* align-self: center; */
+    border-right: 1px solid rgba(255, 255, 255, 0.498);
+  }
  .lineDividerWrappe{
     width: 100%;
     margin: 3rem;
@@ -417,6 +485,162 @@ width: 10rem
     color: white;
     text-decoration: underline rgba(192, 192, 192, 0.51);
     list-style: none;
-    
  }
+ @media screen and (max-width:768px){
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: auto;
+    }
+    html{
+        font-size: 50%;
+    }
+    h1{
+       font-size:  6.5rem;
+       margin: 1rem;
+    }
+    #navImgandP{
+        align-items: center;
+    }
+    #navAndAfterNavWrapper{
+        /* width: 100vw; */
+    }
+    #afterNav {
+        min-height: fit-content;
+        padding-bottom: 5rem;
+padding-top: 5rem;
+        height: 0;
+    }
+    #contactUsWrapper{
+        display: flex;
+        flex-direction: column;
+    }
+.contactUsDivs{
+        padding: 1rem;
+}
+#flexFormAndDownload{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 3rem;
+    overflow-x: hidden;
+}
+.downloadWrapper{
+     display: flex;
+    flex-direction: column;
+justify-content: center;
+    align-items: start;
+    margin: 3rem;
+}
+#flexFormAndDownload p {
+    font-size: 2.5rem;
+    margin: 1rem;
+    margin-top: 1rem;
+}
+#flexLogoAndH3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    margin-bottom: 0.5rem;
+}
+#flexFormAndDownload h3, form h3 {
+    font-size: 4rem;
+    margin: 1rem;
+}
+#downloadIconsWrapper img {
+    width: 15rem;
+    margin: 0.5rem;
+}
+
+.lineDivider {
+    /* margin-bottom: 10rem; */
+    /* width: 100vw; */
+    border-top: 1px solid white;
+     margin: 0;
+    padding: 0;
+}
+.lineDivideWrapper{
+    /* height: 1rem; */
+    /* margin: 0;
+    padding: 0; */
+}
+#addMargin-Top{
+    margin-top: 5rem;
+    display: block;
+}
+.lineDividerrWrapper{
+    /* height: 35rem; */
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    /* align-items: stretch; */
+    margin: 3rem;
+    /* margin-top: 0; */
+ }
+ 
+  .lineDivider{
+    height: 100%;
+    width: 100vw;
+    /* border: 0; */
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    /* margin-top: 0; */
+    /* align-self: center; */
+    border-right: 1px solid rgba(255, 255, 255, 0.498);
+  }
+  #flexFormAndDownload{
+    margin-right: 3rem;
+  }
+  #joinEcoTech{
+margin-right: 3rem;
+  }
+  form{
+    margin: 0;
+  }
+  .linksWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+   .links h3{
+font-size: 4rem;
+   }
+   .links a{
+    font-size: 3rem;
+   }
+   #lineDivideWrapper{
+    display: none;
+   }
+   #socialMediaIcons img{
+    width: 3.5rem;
+   }
+   #socialMediaIcons{
+    display: flex;
+    justify-content: center;
+   }
+   .lineDividerWrappe{
+    margin: 0;
+   }
+   #flexcopyRightImgAndH3 h3{
+    margin-bottom: 0;
+   }
+   #flexcopyRightImgAndH3{
+    margin: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+   }
+   #footerLinks{
+    margin-top: 3rem;
+   margin: 5rem;
+    /* width: 70%; */
+    font-size: 1.2rem;
+   }
+   #footerLinks a{
+    /* font-size: 70%; */
+   }
+}
    

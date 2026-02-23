@@ -18,13 +18,17 @@
         </video>
             <nav>
                 <ul>
-                    <li>
-                        <div id="navImgandP">
-                            <img id="navImg" src="https://res.cloudinary.com/dkevg3kwp/image/upload/v1771690870/Edited_Eco_Tech_Logo_fi98m5.jpg" alt="Eco Tech Logo">
+                    <div id="navImgandP">
+                            <img id="navImg" src="https://res.cloudinary.com/dkevg3kwp/image/upload/v1771690870/Edited_Eco_Tech_Logo_fi98m5.jpg" onclick="toggleMenu()" alt="Eco Tech Logo">
                             <p id="navP">ECOTECH</p>
-                        </div>
-                    </li>
-                    <li><i  class="fa-solid fa-bars" style="color: rgb(255, 255, 255); font-size: 5rem;" ></i></li>
+                    </div>
+                        <div  class="navUl">
+                            <li><a href="#afterNav">Home</a></li>
+                            <li><a href="#whoWeAre">About</a></li>
+                            <li><a href="#ourVision">Vision</a></li>
+                            <li><a href="#contactUs">Contact Us</a></li>
+                        </div> <li><i  class="fa-solid fa-bars" onclick="toggleMenu()"></i></li>
+                
                 </ul>
             </nav>
         </header>
@@ -37,11 +41,10 @@
                     <button type="button" id="navButton">Join Us</button>
                 </div>
                 <div class="navImgWrapper">
-        
                     <video autoplay loop muted id="navVideo" src= "https://res.cloudinary.com/dkevg3kwp/video/upload/v1771702204/Edited_Tech_brain_dvdi6m.webm" type="video/mp4">
                 </div>
-    </div>
         </section>
+    </div>
         <section id="whoWeAre">
             <h2>Who We Are</h2>
            <p>
@@ -132,6 +135,9 @@
                 </div>
             </div>
         </section>
+        <div  class="lineDivideWrapper">
+            <div class="lineDivider"></div>
+        </div>
 <section>
     <div id="flexFormAndDownload">
         <div class ="downloadWrapper">
@@ -146,10 +152,10 @@
                 <a href="https://play.google.com"  target="_blank"><img src="https://res.cloudinary.com/dkevg3kwp/image/upload/v1771691553/Get_it_on_Google_Play_f5cmof.jpg" alt="getItFromPlayStore"></a>
                 <a href="https://apple.com/app-store/" target="_blank"><img src="https://res.cloudinary.com/dkevg3kwp/image/upload/v1771690825/Download_on_the_App_Store_mmocim.jpg" alt="getItFromAppleStore"></a>           </div>
         </div>
-        <div class="lineDivideWrapper" id="lineDivideWrapper">
-            <div id="lineDivider"></div>
-        </div>
-        <div>
+        <div class="lineDividerrWrapper" id="lineDividereWrapper">
+                    <div id="lineDivider"></div>
+                </div>
+        <div id="joinEcoTech">
             <h3>Join EcoTech Family</h3>
             <form action="">
                 <label>Full Name:</label> <br>
@@ -268,9 +274,7 @@
         <a href="">
           <li>Manage Cookies</li>
         </a>
-      </div>
-
-
 </footer>
+<script src="ecoTechWebsite.js"> </script>
 </body>
 </html>
