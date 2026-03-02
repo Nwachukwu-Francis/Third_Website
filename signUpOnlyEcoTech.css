@@ -116,6 +116,7 @@ button:hover{
     }
     video{
         height: 100%;
+        opacity: 1;
     }
     #fullName{
         display: flex;
@@ -149,6 +150,10 @@ button:hover{
     body{
         width: 100vw;
         /* padding: 3rem; */
+
+    }
+    button{
+    background: rgb(0, 0, 78);
 
     }
     #checkboxAndRemember{

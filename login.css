@@ -143,9 +143,19 @@ h3{
 #or{
     color: rgba(0, 0, 30, 0.495);
 }
+label,p{
+    color: rgb(0, 0, 78);}
 #remember{
     /* flex: 1; */
     display:flex;
 }
+ button{
+    background: rgb(0, 0, 78);
+    box-shadow: 2.5px 1.5px 4px rgb(159, 159, 250);
 
-}
+    }
+ button:hover{
+    background: rgb(0, 0, 155);
+    
+ }}
+
