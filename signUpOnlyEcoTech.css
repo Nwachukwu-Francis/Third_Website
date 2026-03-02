@@ -3,13 +3,13 @@ body{
     /* background: url("Black_and_blue_tech_background.mp4"); */
     /* background: url(""); */
     color: white;
-    overlay: auto;
-      background-repeat: no-repeat;
+    /* overlay: auto; */
+      /* background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: scroll; */
 position: relative;
 width: 100vw;
-height: 100vh;
+/* height: 100vh; */
 }
 html{
     width: 100vw;
@@ -48,7 +48,7 @@ form{
     width: 100%;
     background: rgb(0, 0, 23);
 border: 1px solid rgba(192, 192, 192, 0.51);
-  box-shadow: 3.5px 2.5px 5px rgb(177, 161, 245);
+  box-shadow: 3.5px 2.5px 5px rgba(232, 227, 255, 0.813);
 margin-bottom: 5rem;
 border-radius: 2rem;
 
