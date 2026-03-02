@@ -1,0 +1,88 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    /* background: url("") */
+    
+}
+#flexEcoTechH3AndP{
+    display: flex;
+    
+}
+img{
+    width: 5rem;
+    border-radius: 50%;
+}
+form{
+    flex: 1;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    /* align-items: center; */
+}
+#last_Name input, #first_Name input{
+    width: 100%;
+}
+#first_Name{
+    flex: 1;
+}
+#last_Name{
+    flex: 1;
+}
+#ecotechh3andP{
+    flex: 1;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+#fullName{
+    display: flex;
+    gap: 5rem;
+    width: 80%;
+}
+#Gender{
+    display: flex;
+    gap: 3rem;
+}
+#gender{
+    font-weight: bold;
+}
+#Gender label{
+    font-weight: 300;
+}
+#Gender div{
+    display: flex;
+    /* width: 100%; */
+    /* flex: 1; */
+    /* gap: px; */
+    margin-right: 0;
+    padding-right: 0;
+}
+#Gender input{
+    width: 3rem;
+}
+label{
+    font-size: 2rem;
+    font-weight: 600;
+}
+input, select{
+    /* width: 50%; */
+    border-radius: 1rem;
+    margin: 1rem;
+    margin-left: 0;
+    padding: 1rem;
+    border: 1px solid silver;
+    width: 80%;
+    margin-top: 0.5rem;
+}
+#checkbox{
+    box-sizing: content-box;
+    margin: 1rem;
+    padding: 1rem;
+    width: auto;
+}

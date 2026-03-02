@@ -1,0 +1,151 @@
+body{
+    height: 100vh;
+}
+/* html{
+    font-size: 62.5%;
+} */
+ video{
+    position:absolute;
+    top: 0;
+    left: 0;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    /* opacity: 0.9999; */
+}
+form{
+/* margin: auto;    */
+/* margin-top: 20rem; */
+/* display: flex; */
+justify-content: center;
+padding-top: 5rem;
+align-items: center;
+/* flex-direction: column; */
+height: auto;
+/* text-align: start; */
+margin: auto;
+width: 80%;
+
+/* font-size: 10rem; */
+}
+#formWrapper{
+    flex: 1;
+    /* background: rgb(0, 0, 25);
+color: white; */
+}
+
+#ecotechh3andP{
+    background: rgb(0, 0, 25);
+    /* background: rgb(0, 0, 14); */
+    color: white;
+  box-shadow: 3px 2.5px 5px rgb(109, 88, 245);
+  position: relative;
+
+}
+#flexEcoTechH3AndP,.flexEcoTechH3AndP{
+    display: flex;
+    /* align-self: center; */
+    justify-content: center;
+    align-items: center;
+    
+}
+.flexEcoTechH3AndP+p{
+    font-size: 1.8rem;
+}
+.flexEcoTechH3AndP
+.flexEcoTechH3AndP h2{
+    font-size: 2.5rem;
+}
+input{
+    width: 100%;
+}
+a{
+    font-size: 2rem;
+    color: rgb(0, 0, 25);
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(0, 0, 93);
+    text-decoration: 1px underline silver;
+}
+a:active{
+    color: rgba(6, 6, 168);
+    
+}
+p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+button{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+h3{
+    font-size: 2.5rem;
+  text-shadow: 1.1px 1.1px 1px rgb(109, 88, 245);
+
+    text-align: center;
+
+}
+#flexRememberAndForgot{
+    display: flex;
+    width: 100%;
+    gap: 5rem;
+    margin: 0;
+}
+#pass{
+    margin: 0;
+    padding: 0;
+}
+
+#submit{
+    width: 100%;
+}
+.signInButton, #submit{
+    flex: 1;
+    border-radius: 3rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 1.8rem;
+    background: rgb(0, 0, 30);
+    color: white;
+    border: none;
+}
+.signInButton:hover, #submit:hover{
+  box-shadow: 3px 2.5px 5px rgb(109, 88, 245);
+    background: rgb(13, 13, 75);
+    /* padding: 1.1rem 1rem 1.1rem 1rem; */
+    /* font-size: 2.1rem; */
+}
+#googleAndAppleButtons{
+    display: flex;
+    margin-right: 2rem;
+    /* gap: 3rem; */
+}
+@media screen and (max-width:768px) {
+    body{
+        
+    }
+#ecotechh3andP{
+    display: none;
+}
+
+#googleButton, #appleButton{
+    padding: 1rem;
+    flex: none;
+    font-size: 1.5rem;
+}
+#flexRememberAndForgot{
+    /* gap: 0; */
+}
+#or{
+    color: rgba(0, 0, 30, 0.495);
+}
+#remember{
+    /* flex: 1; */
+    display:flex;
+}
+
+}

@@ -1,0 +1,160 @@
+body{
+    background: linear-gradient(rgb(0,0,25));
+    /* background: url("Black_and_blue_tech_background.mp4"); */
+    /* background: url(""); */
+    color: white;
+    overlay: auto;
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+position: relative;
+width: 100vw;
+}
+html{
+    width: 100vw;
+}
+video{
+    position:absolute;
+    top: 0;
+    left: 0;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.5;
+}
+.flexEcoTechH3AndP{
+    font-size: 1.5rem;
+    display: flex;
+    gap: 0.2rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+form{
+    /* margin: auto; */
+    padding-left: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    flex: none;
+    width: 100%;
+    background: rgb(0, 0, 23);
+border: 1px solid rgba(192, 192, 192, 0.51);
+  box-shadow: 3.5px 2.5px 5px rgb(177, 161, 245);
+margin-bottom: 5rem;
+border-radius: 2rem;
+
+}
+#formWrapper{
+    /* background: url(Black_and_blue_tech_background.mp4); */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: auto;
+/* width: 100vw; */
+}
+input,select{
+    margin-bottom: 2rem;
+}
+#flexRememberAndForgot{
+    display: flex;
+    gap: 3rem;
+}
+#checkboxAndRemember{
+flex: 1;
+}
+a{
+    font-size: 2rem;
+    color: rgb(234, 234, 237);
+    text-decoration: none;
+}
+a:hover{
+    /* color: rgb(0, 0, 93); */
+    text-decoration: 1px underline silver;
+}
+a:active{
+    color: rgb(9, 9, 251);
+    
+}
+button{
+    width: 90%;
+    flex: 1;
+    border-radius: 3rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 1.8rem;
+    background: rgb(0, 0, 25);
+    color: white;
+    border: 2px solid rgb(192, 192, 192, 0.5);
+    box-shadow: 2.5px 1.5px 4px rgb(255, 255, 255);
+}
+button:hover{
+    background: rgb(0, 0, 78);
+    font-size: 2.1rem;
+    /* color: rgb(0, 0, 25); */
+    /* border: 1px solid rgb(0, 0, 25); */
+    
+}
+@media screen and (max-width:768px) {
+    #formWrapper{
+    /* width: 100vw; */
+    /* margin: auto; */
+    width: 60vw;
+    /* height: 100vh; */
+     border-bottom: 0;
+        box-shadow: ;
+
+    }
+    video{
+        height: 100%;
+    }
+    #fullName{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    h3{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    form{
+    background: rgba(255, 255, 255, 0.030);
+    margin-bottom: 3rem;
+        padding-right: 1rem;
+        /* max-width: 100%; */
+        padding: 1.5rem;
+        width: fit-content;
+
+
+    }
+     body{
+        overflow-x: hidden;
+        /* height: fit-content; */
+        width: 100vw;
+        /* height: 100vh; */
+       
+    }
+    p{
+        display: none;
+    }
+    body{
+        width: 100vw;
+        /* padding: 3rem; */
+
+    }
+    #checkboxAndRemember{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
+}

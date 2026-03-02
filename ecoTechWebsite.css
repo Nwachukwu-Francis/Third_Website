@@ -30,7 +30,7 @@ body{
     /* background: black; */
 }
 #addTextShadow{
-    text-shadow:2px 2px 1px rgba(109, 88, 245, 0.532);
+    text-shadow:1.5px 1.5px 1px rgba(109, 88, 245, 0.532);
 }
 h1,h2,h3,h4,h5,h6{
     /* color: rgb(0, 0, 20); */
@@ -680,8 +680,16 @@ h1{
   text-shadow: 2px 2px 1px rgb(109, 88, 245);
 }
 .contactUsDivs{
+   /* text-shadow: 2px 2px 1px rgb(38, 7, 242); */
+}
+.contactUsDivs p{
+   text-shadow: 1px 1px 1px rgb(38, 7, 242);
 
-   text-shadow: 2px 2px 1px rgb(38, 7, 242);
+}
+.
+.contactUsDivs h3{
+
+   text-shadow: 1.3px 1.3px 1px rgb(38, 7, 242);
 
 }
 #navImgandP p{
