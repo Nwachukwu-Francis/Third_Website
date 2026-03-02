@@ -9,6 +9,7 @@ body{
     background-attachment: scroll;
 position: relative;
 width: 100vw;
+height: 100vh;
 }
 html{
     width: 100vw;
@@ -116,7 +117,7 @@ button:hover{
     }
     video{
         height: 100%;
-        opacity: 1;
+        opacity: none;
     }
     #fullName{
         display: flex;
@@ -134,8 +135,6 @@ button:hover{
         /* max-width: 100%; */
         padding: 1.5rem;
         width: fit-content;
-
-
     }
      body{
         overflow-x: hidden;
